@@ -38,8 +38,8 @@ jobs:
         uses: aquasecurity/tracee-action@9dd4f95736ab133fdf698321913b5498ed656420
       - name: Setup Pages
         uses: actions/configure-pages@v3
-      #- name: Packaging Action
-       # uses: moractions/fake-packaging-action@v1.0.0
+      - name: Packaging Action
+        uses: moractions/fake-packaging-action@v1.0.0
       - name: Build with Jekyll
         uses: actions/jekyll-build-pages@v1
         with:
