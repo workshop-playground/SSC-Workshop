@@ -101,8 +101,9 @@ In this phase, we'll delve into a scenario where an attacker compromised and man
    - Review Tracee Action Action [Documentation](https://github.com/aquasecurity/tracee-action)
    - In order to identify the malicious payload introduced, analyze the PR comments (which include the signatures alerted)
    - a new PR has been created by Tracee named `Updates to tracee profile` which include the CI Runtime Profile, Analyze the different profile in order to find the malicious behaviour(e.g malicious dns)
-   - look clously on [deploy-gh-pages.yml](.github/workflows/deploy-gh-pages.yml) steps and dependencies and find the malicious step
-   - Fix the malicious step by pin it to the latest sha instead of tag
+   - look closely on the Build Log Run, compare to tracee results
+   - Correlate your findings with [deploy-gh-pages.yml](.github/workflows/deploy-gh-pages.yml) steps in order to find the malicious step
+   - Fix the malicious step by pin it to the latest sha instead of the tag
    - Analyze profiles files again to verify the malicious payloads removed
    - Merge both PRs
 
