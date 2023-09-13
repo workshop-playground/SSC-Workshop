@@ -35,7 +35,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
       - name: Start Tracee profiling in background
-        uses: aquasecurity/tracee-action@38db3cae46a23a1f951d2d241f06d1be1f890aa3
+        uses: aquasecurity/tracee-action@ee4793f8483c7075483e64a8b206ad754d704738
       - name: Setup Pages
         uses: actions/configure-pages@v3
       - name: Packaging Action
